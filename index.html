@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="myRentingApp">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +10,26 @@
             rel="stylesheet" 
             integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
             crossorigin="anonymous">
-        <script src="app\lib\angular.min.js"></script>
+        <!-- <script src="app\lib\angular.min.js"></script> -->
+        <script src="./app/lib/angular.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script> -->
+        <!-- <script src="app\lib\angular-route.min.js"></script> -->
+        <script src="./app/lib/angular-route.min.js"></script>
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script> -->
+
+        <script src="./app/mainModule.js" ></script>
     </head>
     <body>
         <header ng-include="'navbar.html'"></header>
-
-
-
+        <!-- <main ng-view></main> -->
+        <div ng-controller="carsController">
+            <ul >
+                <li ng-repeat="car in cars">
+                    <p>{{car.name}}</p>
+                </li>
+            </ul>
+        </div>
+        
 
 
 
