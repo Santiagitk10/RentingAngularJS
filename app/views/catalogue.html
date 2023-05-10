@@ -1,5 +1,15 @@
-<ul>
-    <li ng-repeat="car in cars">
-        <h1>{{car.name}}</h1>
-    </li>
-</ul>
+<div class="container mt-5">
+    <div class="row gy-3">
+        <div ng-repeat="car in cars" class="col-md-6 col-lg-4">
+            <div  class="card h-100" style="width: 18rem;">
+                <img src="{{car.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{car.make}} - {{car.name}}</h5>
+                  <h6 class="card-title">{{car.model}}</h4>
+                  <h1>Valor Día : ${{car.priceDay}} </h1>
+                  <a href="#" class="btn btn-success">Alquilar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
