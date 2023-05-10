@@ -1,15 +1,50 @@
 <div class="container mt-5">
+
     <div class="row gy-3">
         <div ng-repeat="car in cars" class="col-md-6 col-lg-4">
             <div  class="card h-100" style="width: 18rem;">
+                
                 <img src="{{car.image}}" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">{{car.make}} - {{car.name}}</h5>
                   <h6 class="card-title">{{car.model}}</h4>
                   <h1>Day  : ${{car.priceDay}} </h1>
-                  <a href="#" class="btn btn-success">Alquilar</a>
+                  <div id="cardButtons">
+                    <a href="#" class="btn btn-success">Alquilar</a>
+                    <div class="remove" ng-click="removeCar(car)">x</div>
+                  </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div class="content">
+
+    <h1>Create a New Listing</h1>
+
+    <form name="newListingForm" novalidate ng-submit="addListing()">
+        <input type="text" placeholder="make" name="make" ng-model="listing.make" ng-required="true">
+        <div ng-show="newListingForm.make.$touched && newListingForm.make.$invalid">
+            <small style="color: red; display: block; text-align: center">The producer name must be provided</small>
+        </div>
+        <input type="text" placeholder="name" name="name" ng-model="listing.name" ng-required="true">
+        <div ng-show="newListingForm.name.$touched && newListingForm.name.$invalid">
+            <small style="color: red; display: block; text-align: center">The car name must be provided</small>
+        </div>
+        <input type="number" placeholder="model" name="model" ng-model="listing.model" ng-required="true">
+        <div ng-show="newListingForm.model.$touched && newListingForm.model.$invalid">
+            <small style="color: red; display: block; text-align: center">The car model year must be provided</small>
+        </div>
+        <input type="number" placeholder="price day" name="priceDay" ng-model="listing.priceDay" ng-required="true">
+        <div ng-show="newListingForm.priceDay.$touched && newListingForm.priceDay.$invalid">
+            <small style="color: red; display: block; text-align: center">The rental price for a day must be provided</small>
+        </div>
+        <input type="text" placeholder="image Url" name="image" ng-model="listing.image" ng-required="true">
+        <div ng-show="newListingForm.image.$touched && newListingForm.image.$invalid">
+            <small style="color: red; display: block; text-align: center">The car image url must be provided</small>
+        </div>
+        <input type="submit" value="Create" ng-disabled="newListingForm.$invalid">
+    </form>
+</div>
+

@@ -22,4 +22,52 @@
 	"model": 2018,
 	"priceDay": 110,
 	"image": "https://images.unsplash.com/photo-1604108415419-6d4bd73a1c2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
+}, {
+	"make": "Renault",
+	"name": "Sandero RS",
+	"model": 2017,
+	"priceDay": 60,
+	"image": "https://images.unsplash.com/photo-1607853203379-a5cd4466323a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+}, {
+	"make": "Chevrolet",
+	"name": "Camaro",
+	"model": 2014,
+	"priceDay": 140,
+	"image": "https://images.unsplash.com/photo-1562911791-c7a97b729ec5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1537&q=80"
+}, {
+	"make": "Toyota",
+	"name": "Corolla",
+	"model": 2019,
+	"priceDay": 90,
+	"image": "https://images.unsplash.com/photo-1626072557464-90403d788e8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+}, {
+	"make": "Ford",
+	"name": "Raptor",
+	"model": 2018,
+	"priceDay": 110,
+	"image": "https://images.unsplash.com/photo-1604108415419-6d4bd73a1c2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
+}, {
+	"make": "Renault",
+	"name": "Sandero RS",
+	"model": 2017,
+	"priceDay": 60,
+	"image": "https://images.unsplash.com/photo-1607853203379-a5cd4466323a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+}, {
+	"make": "Chevrolet",
+	"name": "Camaro",
+	"model": 2014,
+	"priceDay": 140,
+	"image": "https://images.unsplash.com/photo-1562911791-c7a97b729ec5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1537&q=80"
+}, {
+	"make": "Toyota",
+	"name": "Corolla",
+	"model": 2019,
+	"priceDay": 90,
+	"image": "https://images.unsplash.com/photo-1626072557464-90403d788e8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+}, {
+	"make": "Ford",
+	"name": "Raptor",
+	"model": 2018,
+	"priceDay": 110,
+	"image": "https://images.unsplash.com/photo-1604108415419-6d4bd73a1c2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
 }]

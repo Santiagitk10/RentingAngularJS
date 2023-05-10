@@ -35,14 +35,17 @@
 }
 
 main{
-    display: flex;
+    margin-top: 100px;
+  }
+
+.content > form {
     justify-content: center;
     background: #eee;
     width: 90%;
     margin: 30px auto;
     border-radius: 10px;
-    padding-bottom: 20px;
-  }
+    padding: 20px;
+}
 
 
 input.ng-invalid.ng-touched {
@@ -53,3 +56,26 @@ input[disabled = "disabled"]{
     opacity: 0.4;
     cursor: not-allowed !important;
 }
+
+.content> h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#cardButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.remove{
+    float: right;
+    padding: 5px;
+    background: #fff;
+    width: 18px;
+    text-align: center;
+    border-radius: 20px;
+    color: crimson;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size:x-large
+  }
