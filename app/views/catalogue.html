@@ -1,9 +1,12 @@
 <div class="container mt-5">
 
+    <button ng-click="order = 'model'">By Model</button>
+    <button ng-click="order = 'priceDay'">By Price</button>
+    <input type="text" ng-model="search" placeholder="search">
+
     <div class="row gy-3">
-        <div ng-repeat="car in cars" class="col-md-6 col-lg-4">
+        <div ng-repeat="car in cars | orderBy: order | filter: search" class="col-md-6 col-lg-4">
             <div  class="card h-100" style="width: 18rem;">
-                
                 <img src="{{car.image}}" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">{{car.make}} - {{car.name}}</h5>
