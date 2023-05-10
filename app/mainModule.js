@@ -11,6 +11,9 @@ myRentingApp.config(['$routeProvider', function($routeProvider){
             templateUrl: 'app/views/catalogue.html',
             controller: 'carsController'
         })
+        .when('/newListing', {
+            templateUrl: 'app/views/newListing.html',
+        })
         .otherwise({
             redirectTo: '/home'
         })

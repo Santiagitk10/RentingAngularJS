@@ -3,3 +3,53 @@
     height: 25vw;
     object-fit: cover;
 }
+
+.content{
+    padding: 20px;
+  }
+
+.content input{
+    width: 100%;
+    padding: 10px 5%;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    margin: 10px 0;
+  }
+
+  .content input[type="submit"]:last-child{
+    width: 150px;
+    display: block;
+    margin: 15px auto;
+  }
+
+.content button,
+.content input[type="submit"]{
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #777;
+  border: 0;
+  box-shadow: 2px 2px 2px rgba(20,20,20,0.1);
+  font-size: 16px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    background: #eee;
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding-bottom: 20px;
+  }
+
+
+input.ng-invalid.ng-touched {
+    border: 2px solid red;
+}
+
+input[disabled = "disabled"]{
+    opacity: 0.4;
+    cursor: not-allowed !important;
+}
