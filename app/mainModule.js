@@ -1,15 +1,18 @@
 var myRentingApp = angular.module('myRentingApp', ['ngRoute']);
 
 
-// myRentingApp.config(['$routeProvider', function($routeProvider){
+myRentingApp.config(['$routeProvider', function($routeProvider){
 
-//     $routeProvider
-//         .when('catalogue', {
-//             templateUrl: 'app\views\catalogue.html',
-//             controller: 'carsController'
-//         })
+    $routeProvider
+        .when('/catalogue', {
+            templateUrl: 'app/views/catalogue.html',
+            controller: 'carsController'
+        })
+        .otherwise({
+            redirectTo: '/catalogue'
+        })
 
-// }]);
+}]);
 
 
 myRentingApp.controller('carsController', ['$scope', '$http', function($scope, $http){
