@@ -13,7 +13,7 @@
                   <h6 class="card-title">{{car.model}}</h4>
                   <h1>Day  : ${{car.priceDay}} </h1>
                   <div id="cardButtons">
-                    <a href="#" class="btn btn-success">Alquilar</a>
+                    <div class="btn btn-success" ng-click="checkOut()">Alquilar</div>
                     <div class="remove" ng-click="removeCar(car)">x</div>
                   </div>
                 </div>

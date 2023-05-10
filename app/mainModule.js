@@ -13,6 +13,10 @@ myRentingApp.config(['$routeProvider', function($routeProvider){
             templateUrl: 'app/views/catalogue.html',
             controller: 'carsController'
         })
+        .when('/reservationSuccess', {
+            templateUrl: 'app/views/reservationSuccess.html',
+            controller: 'carsController'
+        })
         .otherwise({
             redirectTo: '/home'
         })
@@ -20,7 +24,7 @@ myRentingApp.config(['$routeProvider', function($routeProvider){
 }]);
 
 
-myRentingApp.controller('carsController', ['$scope', '$http', function($scope, $http){
+myRentingApp.controller('carsController', ['$scope', '$http', '$location', function($scope, $http, $location){
 
 
     $http.get('app/db/cars.json').then(function(response){
@@ -41,9 +45,12 @@ myRentingApp.controller('carsController', ['$scope', '$http', function($scope, $
 
     $scope.removeCar = function(car){
         var removedCar = $scope.cars.indexOf(car)
-
         $scope.cars.splice(removedCar,1);
+    };
 
+
+    $scope.checkOut = function(car){
+        $location.path('reservationSuccess');
     };
 
 }]);

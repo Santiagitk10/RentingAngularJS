@@ -88,3 +88,13 @@ input[disabled = "disabled"]{
     border: 2px solid #ddd;
     margin: 10px 0;
   }
+
+
+  #confirmation {
+    display: flex;
+    justify-content: center;
+    color: green;
+    margin-top: 200px;
+  }
+
+
