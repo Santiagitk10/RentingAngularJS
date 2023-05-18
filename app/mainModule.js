@@ -1,7 +1,5 @@
 var myRentingApp = angular.module('myRentingApp', ['ngRoute']);
 
-var auxiliarCars = [];
-
 
 myRentingApp.config(['$routeProvider', function($routeProvider){
 
